@@ -1,0 +1,24 @@
+// ==============================================================================
+// COMPREHENSIVE TEST SCRIPT: test_all.lang
+// ==============================================================================
+
+namespace TestSuite {
+
+    class Tester {
+        int testScore = 95;
+        string welcomeMessage = "Hello from custom hybrid language!";
+
+        void runTests() {
+            // Test printing a string and a variable value
+            print(welcomeMessage);
+            print("Current Test Score: ");
+            print(testScore);
+
+            // Test C-style memory allocation arena pool
+            ptr<byte> memBlock = malloc(64);
+            if (memBlock != null) {
+                print("Memory Arena Allocation: SUCCESS");
+            }
+        }
+    }
+}
